@@ -16,8 +16,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="index-gather-store-service" options="-parameters" />
-      <module name="third-part-index-data-project" options="-parameters" />
+      <module name="index-gather-store-service" options="" />
+      <module name="third-part-index-data-project" options="" />
     </option>
   </component>
 </project>
