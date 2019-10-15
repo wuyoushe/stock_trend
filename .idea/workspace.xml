@@ -27,9 +27,8 @@
       <change afterPath="$PROJECT_DIR$/../tmall_ssm/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tmall_ssm/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../tmall_ssm/tmall_ssm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/pojo/IndexData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/service/IndexDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexDataController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/QuartzConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/job/IndexDataSyncJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
@@ -241,6 +240,7 @@
       <change beforePath="$PROJECT_DIR$/../altest/src/altest/TestCollection.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../altest/src/altest/TestCollection1.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index-gather-store-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/index-gather-store-service/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -263,30 +263,30 @@
         <counts>
           <entry key="gitignore" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="11" />
-          <entry key="xml" value="2" />
+          <entry key="java" value="14" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="14" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="7" />
-          <entry key="java" value="2832" />
-          <entry key="xml" value="127" />
+          <entry key="java" value="3375" />
+          <entry key="xml" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2832" />
+          <entry key="JAVA" value="3375" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="XML" value="127" />
+          <entry key="XML" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -301,18 +301,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/IndexGatherStoreApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/util/SpringContextUtil.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -341,7 +329,7 @@
         <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -372,7 +360,7 @@
         <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/service/IndexDataService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="62" column="53" lean-forward="true" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+              <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1562#1563#0" expanded="true" />
@@ -384,11 +372,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexDataController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="747">
-              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+            <state relative-caret-position="412">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index-gather-store-service/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-438">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/job/IndexDataSyncJob.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/QuartzConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -432,7 +453,6 @@
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/service/IndexService_back.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/IndexGatherStoreApplication.java" />
-        <option value="$PROJECT_DIR$/index-gather-store-service/pom.xml" />
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/RedisCacheConfig.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/util/SpringContextUtil.java" />
@@ -441,6 +461,9 @@
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/pojo/IndexData.java" />
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/service/IndexDataService.java" />
         <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexDataController.java" />
+        <option value="$PROJECT_DIR$/index-gather-store-service/pom.xml" />
+        <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/job/IndexDataSyncJob.java" />
+        <option value="$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/QuartzConfiguration.java" />
       </list>
     </option>
   </component>
@@ -471,10 +494,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="62" />
-    <option name="y" value="-11" />
+    <option name="x" value="47" />
+    <option name="y" value="21" />
     <option name="width" value="1940" />
-    <option name="height" value="930" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -534,7 +557,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trend" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trendParentProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trendParentProject" type="462c0819:PsiDirectoryNode" />
+              <item name="index-gather-store-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trend" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -550,7 +583,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571129652394" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571131058312" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/index-gather-store-service/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -584,6 +617,7 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.4310722" />
   </component>
   <component name="RunManager" selected="Spring Boot.IndexGatherStoreApplication">
     <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -654,8 +688,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
         <item itemvalue="Spring Boot.ThirdPartIndexDataApplication" />
+        <item itemvalue="Spring Boot.IndexGatherStoreApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
         <item itemvalue="Application.TestHutool" />
       </list>
@@ -677,12 +711,12 @@
       <workItem from="1571031505487" duration="770000" />
       <workItem from="1571058561971" duration="3263000" />
       <workItem from="1571114201699" duration="1150000" />
-      <workItem from="1571127262581" duration="2220000" />
+      <workItem from="1571127262581" duration="3792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19571000" />
+    <option name="totallyTimeSpent" value="21143000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -697,7 +731,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.2639485" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49913645" visible="true" weight="0.25107297" />
       <window_info id="Structure" order="1" sideWeight="0.50086355" side_tool="true" weight="0.17542918" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -706,7 +740,7 @@
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run Dashboard" weight="0.3298611" />
+      <window_info anchor="bottom" auto_hide="true" x="28" y="303" width="1864" height="434" id="Run Dashboard" weight="0.2673611" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3414352" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3252315" />
@@ -821,31 +855,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/third-part-index-data-project/src/main/java/cn/how2j/trend/ThirdPartIndexDataApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index-gather-store-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/RedisCacheConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="365">
           <caret line="52" column="5" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
@@ -882,7 +895,7 @@
     <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -909,7 +922,7 @@
     <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/service/IndexDataService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="62" column="53" lean-forward="true" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+          <caret line="62" column="53" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1562#1563#0" expanded="true" />
@@ -922,8 +935,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/web/IndexDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+        <state relative-caret-position="412">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-gather-store-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-438">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/third-part-index-data-project/src/main/java/cn/how2j/trend/ThirdPartIndexDataApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/config/QuartzConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index-gather-store-service/src/main/java/cn/how2j/trend/job/IndexDataSyncJob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="23" column="51" lean-forward="true" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
