@@ -22,10 +22,10 @@
     </properties>
 
     <dependencies>
-        <!-- springboot web -->
+        <!-- springboot cn.how2j.trend.web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-cn.how2j.trend.web</artifactId>
         </dependency>
         <!-- eureka-client -->
         <dependency>

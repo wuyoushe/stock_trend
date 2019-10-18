@@ -37,10 +37,21 @@
   </properties>
 
   <dependencies>
-      <dependency>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-web</artifactId>
-      </dependency>
+    <!-- springboot cn.how2j.trend.web -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-cn.how2j.trend.web</artifactId>
+    </dependency>
+    <!--thymeleaf-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    <!-- eureka-client -->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>cn.hutool</groupId>
