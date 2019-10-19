@@ -8,9 +8,5 @@ public class ViewController {
     @GetMapping("/")
     public String view() throws Exception {
         return "view";
-
-
-
-
     }
 }
