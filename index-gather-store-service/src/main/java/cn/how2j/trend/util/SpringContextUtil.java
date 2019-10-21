@@ -2,7 +2,10 @@ package cn.how2j.trend.util;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
 //工具类，用于获取 IndexService. 为什么要用它呢？请看下个步骤的讲解。
+
+@Component
 public class SpringContextUtil implements ApplicationContextAware {
 
     private SpringContextUtil() {
