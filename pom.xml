@@ -16,6 +16,9 @@
       <module>index-zuul-service</module>
       <module>trend-trading-backtest-service</module>
       <module>trend-trading-backtest-view</module>
+        <module>index-hystrix-dashboard</module>
+      <module>index-turbine</module>
+        <module>index-config-server</module>
     </modules>
 
     <name>trendParentProject</name>
